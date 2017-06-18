@@ -1,0 +1,16 @@
+<div id="app">
+  <div>
+  {{ message }}
+  </div>
+  <div>
+    <input type="text" v-model="message">
+  </div>
+    <h2>Tasks</h2>
+    <ul>
+    
+    <li v-for="task in tasks">{{ task }}</li>
+    </ul>
+ <div>
+    <input type="text" v-model="newTask">
+    <button onclick="addTask()">Add Task</button>
+ </div>
