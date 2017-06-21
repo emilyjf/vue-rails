@@ -8,7 +8,10 @@
     <h2>Tasks</h2>
     <ul>
     
-    <li v-for="task in tasks">{{ task }}</li>
+    <li v-for="task in tasks">
+      
+      <h2 v-on:click="toggleTask(task)" v-bind:class="{strike: task.completed}"> {{ task.text }} </h2>
+    </li>
     </ul>
  <div>
     <input type="text" v-model="newTask">
